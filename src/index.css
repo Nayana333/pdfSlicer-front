@@ -1,0 +1,191 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  
+
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect for glassy look */
+  height: calc(100vh - 50px); 
+  margin-top: 18px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border to mimic glass edges */
+  border-radius: 50px; /* Fully rounded corners */
+  overflow: hidden; /* Ensures content inside doesn't overflow over the curved borders */
+}
+
+.left-section {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Ensures the left section can scroll */
+}
+
+.right-section {
+  width: 70%;
+  padding: 20px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+}
+
+.empty-message {
+font-size: 18px;
+color: #666;
+text-align: center;
+}
+
+.empty-message-container {
+text-align: center;
+color: #666;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+
+.navbar {
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+
+.formStyle {
+padding: 20px;
+border: 1px solid black;
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+border-radius: 30px
+}
+
+.form-control {
+  border-color: black !important;
+}
+
+.uploaded {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.output-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.inner-div {
+  margin-bottom: 10px;
+}
+
+.pdf-div {
+  padding: 20px;
+  background-color: #dedede;
+  max-height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  border-radius: 15px;
+}
+.page-container {
+  position: relative;
+}
+
+.checkbox-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: scale(1.3); 
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+
+canvas.react-pdf__Page__canvas {
+  margin-bottom: 50px;
+}
+
+.instructions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.instructions {
+  font-size: 16px;
+  color: #333;
+}
+
+.fixed-button {
+  padding: 5px 15px;
+  background-color: #e60404;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.fixed-button:hover {
+  background-color: #da0a48a4;
+}
+
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e60404;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #da0a48;
+}
+
+
+

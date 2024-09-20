@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.logo {
+  height: 50px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 15px;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-section {
+  flex: 2;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-left: 2px solid #eaeaea;
+}
+
+.upload-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  color: #555;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.uploaded {
+  margin-top: 20px;
+}
+
+.pdf-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eaeaea;
+}
+
+.pdf-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-show {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-show:hover {
+  background-color: #218838;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+}
+
+.no-pdf-image {
+  width: 150px;
+  margin-top: 20px;
+}
