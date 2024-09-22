@@ -100,7 +100,6 @@ const App: React.FC = () => {
       <div style={{ display: 'flex', marginTop: '32px' }}>
         <div
           style={{
-            width: '700px',
             marginRight: '32px',
             position: 'sticky',
             top: '20px',
