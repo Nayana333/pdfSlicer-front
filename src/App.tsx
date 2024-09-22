@@ -5,7 +5,6 @@ import PdfComp from './components/PdfComp';
 import { FaBars, FaTrash } from 'react-icons/fa';
 import { toast, Toaster } from 'react-hot-toast';
 
-// TypeScript interfaces
 interface PdfData {
   _id: string;
   title: string;
