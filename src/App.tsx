@@ -28,7 +28,7 @@ const App: React.FC = () => {
 
   const getPdf = async () => {
     try {
-      const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}get-files`);
+      const result = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/get-files`);
       console.log(result.data.data);
       setAllImage(result.data.data);
     } catch (error) {
