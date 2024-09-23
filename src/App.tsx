@@ -48,7 +48,7 @@ const App: React.FC = () => {
     formData.append('file', file);
 
     try {
-      const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}upload-files`, formData, {
+      const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/upload-files`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         withCredentials: true,
       });
