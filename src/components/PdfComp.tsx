@@ -55,7 +55,7 @@ const PdfComp: React.FC<PdfCompProps> = (props) => {
     if (selectedPages.length > 0) {
       try {
         const response = await axios.post(
-          'http://localhost:5000/download-selected-pages',
+          `${process.env.REACT_APP_BACKEND_URL}/download-selected-pages`,
           {
             pdfFile: props.pdfFile.split('/').pop(),
             selectedPages,

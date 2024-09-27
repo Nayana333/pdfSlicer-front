@@ -51,7 +51,7 @@ const App: React.FC = () => {
       const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/upload-files`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         withCredentials: true,
-      });
+      })
 
       if (result.data.status === 'OK') {
         toast.success('Uploaded successfully!');
